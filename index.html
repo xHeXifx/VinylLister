@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinyl Collection</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>My Vinyl Collection</h1>
+            <button id="addRecordBtn">+</button>
+        </header>
+        <div id="recordsContainer"></div>
+    </div>
+
+    <!-- Add Record Modal -->
+    <div id="addRecordModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Add New Record</h2>
+            <form id="addRecordForm">
+                <label for="recordName">Record Name:</label>
+                <input type="text" id="recordName" name="recordName" required>
+                <label for="artistName">Artist Name:</label>
+                <input type="text" id="artistName" name="artistName" required>
+                <button type="submit">Add Record</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
